@@ -6,21 +6,11 @@ import UndefinedValidatable from "../validatable/undefined";
 import Return from "@dikac/t-validator/validatable/simple";
 import ValidatorValidatable from "@dikac/t-validator/validatable/validatable";
 
-export default class Undefined<MessageT>
-    implements
-        Validator<unknown, undefined, Readonly<ValidatorValidatable<unknown, MessageT>>>,
-        Message<(result:Readonly<Value & Validatable>)=>MessageT>
-{
+export default function Undefined<MessageT>(
+    message : (result:Readonly<Value & Validatable>)=>MessageT
+) : Validator<unknown, undefined, Readonly<ValidatorValidatable<unknown, MessageT>>> {
 
-    constructor(
-       public message : (result:Readonly<Value & Validatable>)=>MessageT
-    ) {
-    }
-
-    validate<Argument extends undefined>(value: Argument): Readonly<ValidatorValidatable<undefined, MessageT, true>>
-    validate<Argument extends unknown>(value: Argument): Return<unknown, Argument, undefined, Readonly<ValidatorValidatable<unknown, MessageT>>>
-    validate<Argument extends unknown>(value: Argument) {
-
-        return  UndefinedValidatable(value, this.message);
-    }
+    return function (value) {
+        return  UndefinedValidatable(value, message);
+    } as Validator<unknown, undefined, Readonly<ValidatorValidatable<unknown, MessageT>>>
 }
