@@ -1,6 +1,11 @@
-import UndefinedType from "../string/undefined";
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
 
-export default function Undefined(subject : string = '') : Error {
 
-    return new Error(UndefinedType(false, subject))
+export namespace Undefined {
+
+    export const Parameter = UndefinedParameter;
+    export const Parameters = UndefinedParameters;
 }
+
+export default Undefined;

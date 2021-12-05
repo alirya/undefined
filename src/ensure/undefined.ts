@@ -1,12 +1,11 @@
-import AssertUndefined from "../assert/undefined";
-import UndefinedError from "../assert/throwable/undefined";
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
 
-export default function Undefined(
-    value : unknown,
-    error : (value:unknown)=>Error = UndefinedError
-) : undefined {
 
-    AssertUndefined(value, error);
+export namespace Undefined {
 
-    return value;
+    export const Parameter = UndefinedParameter;
+    export const Parameters = UndefinedParameters;
 }
+
+export default Undefined;

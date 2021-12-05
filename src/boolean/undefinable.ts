@@ -1,10 +1,12 @@
 import TypeUndefined from './undefined';
-
-export default function Undefinable<Type>(
+/**
+ * check if value is undefined or delegate checking to given validator
+ */
+export default function Undefinable<Alternative>(
     value : unknown,
-    notUndefined : (value : unknown) => value is Type
-) : value is Type|undefined {
+    notundefined : (value : unknown) => value is Alternative
+) : value is Alternative|undefined {
 
-    return TypeUndefined(value) || notUndefined(value);
+    return TypeUndefined(value) || notundefined(value);
 }
 

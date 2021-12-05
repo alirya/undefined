@@ -1,1 +1,7 @@
-export default function Undefinable<Alternative>(value: unknown, ensure: (value: unknown) => Alternative, error?: (value: unknown) => Error): Alternative | undefined;
+import UndefinableParameter from "./undefinable-parameter";
+import UndefinableParameters from "./undefinable-parameters";
+export declare namespace Undefinable {
+    const Parameter: typeof UndefinableParameter;
+    const Parameters: typeof UndefinableParameters;
+}
+export default Undefinable;

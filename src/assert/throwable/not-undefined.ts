@@ -1,6 +1,11 @@
-import NotUndefinedType from "../string/not-undefined";
+import NotUndefinedParameter from "./not-undefined-parameter";
+import NotUndefinedParameters from "./not-undefined-parameters";
 
-export default function NotUndefined(subject : string = '') : Error {
 
-    return new Error(NotUndefinedType(false, subject))
+export namespace NotUndefined {
+
+    export const Parameter = NotUndefinedParameter;
+    export const Parameters = NotUndefinedParameters;
 }
+
+export default NotUndefined;

@@ -1,9 +1,7 @@
-/**
- * string intended for undefined message
- *
- * @param valid
- * @param value
- * @param subject
- * @param conversion
- */
-export default function Undefined(valid: boolean, value: unknown, subject?: string, conversion?: (value: unknown) => string): string;
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
+export declare namespace Undefined {
+    const Parameter: typeof UndefinedParameter;
+    const Parameters: typeof UndefinedParameters;
+}
+export default Undefined;

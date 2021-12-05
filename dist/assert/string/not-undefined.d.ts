@@ -1,8 +1,7 @@
-/**
- * string intended for not undefined message
- *
- * @param valid
- * @param value
- * @param subject
- */
-export default function NotUndefined(valid: boolean, value: unknown, subject?: string): string;
+import NotUndefinedParameter from "./not-undefined-parameter";
+import NotUndefinedParameters from "./not-undefined-parameters";
+export declare namespace NotUndefined {
+    const Parameter: typeof NotUndefinedParameter;
+    const Parameters: typeof NotUndefinedParameters;
+}
+export default NotUndefined;

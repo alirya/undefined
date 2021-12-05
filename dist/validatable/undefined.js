@@ -1,6 +1,9 @@
-import Callback from "@dikac/t-validator/validatable/callback-function";
-import UndefinedGuard from "../boolean/undefined";
-export default function Undefined(value, message) {
-    return Callback(value, UndefinedGuard, message);
-}
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
+export var Undefined;
+(function (Undefined) {
+    Undefined.Parameter = UndefinedParameter;
+    Undefined.Parameters = UndefinedParameters;
+})(Undefined || (Undefined = {}));
+export default Undefined;
 //# sourceMappingURL=undefined.js.map

@@ -1,6 +1,6 @@
 import Guard from "../boolean/undefined";
-import Callback from "@dikac/t-function/assert/callback";
-import UndefinedError from "./throwable/undefined";
+import Callback from "@dikac/t-function/assert/callback-parameters";
+import UndefinedError from "./throwable/undefined-parameters";
 
 export default function Undefined(
     value : unknown,

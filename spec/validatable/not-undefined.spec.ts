@@ -1,5 +1,5 @@
-import Validatable from "../../dist/validatable/not-undefined";
-import StringMessage from "../../dist/validatable/string/undefined";
+import Validatable from "../../dist/validatable/not-undefined-parameters";
+import StringMessage from "../../dist/assert/string/undefined-parameters";
 
 it("enable console log", () => { spyOn(console, 'log').and.callThrough()});
 

@@ -1,2 +1,7 @@
-import { Union } from "ts-toolbelt";
-export default function NotUndefined<Type>(value: Type, error?: (value: unknown) => Error): Union.Exclude<Type, undefined>;
+import NotUndefinedParameter from "./not-undefined-parameter";
+import NotUndefinedParameters from "./not-undefined-parameters";
+export declare namespace NotUndefined {
+    const Parameter: typeof NotUndefinedParameter;
+    const Parameters: typeof NotUndefinedParameters;
+}
+export default NotUndefined;

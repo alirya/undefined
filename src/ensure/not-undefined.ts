@@ -1,13 +1,11 @@
-import AssertNotUndefined from "../assert/not-undefined";
-import NotUndefinedError from "../assert/throwable/not-undefined";
-import {Union} from "ts-toolbelt"
+import NotUndefinedParameter from "./not-undefined-parameter";
+import NotUndefinedParameters from "./not-undefined-parameters";
 
-export default function NotUndefined<Type>(
-    value : Type,
-    error : (value:unknown)=>Error = NotUndefinedError
-) : Union.Exclude<Type, undefined>  {
 
-    AssertNotUndefined(value, error);
+export namespace NotUndefined {
 
-    return value;
+    export const Parameter = NotUndefinedParameter;
+    export const Parameters = NotUndefinedParameters;
 }
+
+export default NotUndefined;

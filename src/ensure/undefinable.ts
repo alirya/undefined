@@ -1,27 +1,11 @@
-import Guard from "../boolean/undefined";
+import UndefinableParameter from "./undefinable-parameter";
+import UndefinableParameters from "./undefinable-parameters";
 
-export default function Undefinable<Alternative>(
-    value : unknown,
-    ensure : (value:unknown)=>Alternative,
-    error ?: (value:unknown)=>Error
-) : Alternative|undefined {
 
-    if(Guard(value)) {
+export namespace Undefinable {
 
-        return value;
-    }
-
-    try {
-
-        return ensure(value);
-
-    } catch (e) {
-
-        if(error) {
-
-            throw error(value);
-        }
-
-        throw e;
-    }
+    export const Parameter = UndefinableParameter;
+    export const Parameters = UndefinableParameters;
 }
+
+export default Undefinable;

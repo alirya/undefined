@@ -1,10 +1,9 @@
-import UndefinedValidatable from "../validatable/undefined";
-export default class Undefined {
-    constructor(message) {
-        this.message = message;
-    }
-    validate(value) {
-        return UndefinedValidatable(value, this.message);
-    }
-}
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
+export var Undefined;
+(function (Undefined) {
+    Undefined.Parameter = UndefinedParameter;
+    Undefined.Parameters = UndefinedParameters;
+})(Undefined || (Undefined = {}));
+export default Undefined;
 //# sourceMappingURL=undefined.js.map

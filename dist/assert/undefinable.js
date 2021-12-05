@@ -1,15 +1,9 @@
-import Guard from "../boolean/undefined";
-export default function Undefinable(value, assert, error) {
-    try {
-        if (!Guard(value)) {
-            assert(value);
-        }
-    }
-    catch (e) {
-        if (error) {
-            throw error(value);
-        }
-        throw e;
-    }
-}
+import UndefinableParameter from "./undefinable-parameter";
+import UndefinableParameters from "./undefinable-parameters";
+export var Undefinable;
+(function (Undefinable) {
+    Undefinable.Parameter = UndefinableParameter;
+    Undefinable.Parameters = UndefinableParameters;
+})(Undefinable || (Undefinable = {}));
+export default Undefinable;
 //# sourceMappingURL=undefinable.js.map

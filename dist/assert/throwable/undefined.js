@@ -1,5 +1,9 @@
-import UndefinedType from "../string/undefined";
-export default function Undefined(subject = '') {
-    return new Error(UndefinedType(false, subject));
-}
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
+export var Undefined;
+(function (Undefined) {
+    Undefined.Parameter = UndefinedParameter;
+    Undefined.Parameters = UndefinedParameters;
+})(Undefined || (Undefined = {}));
+export default Undefined;
 //# sourceMappingURL=undefined.js.map

@@ -1,7 +1,9 @@
-import AssertUndefined from "../assert/undefined";
-import UndefinedError from "../assert/throwable/undefined";
-export default function Undefined(value, error = UndefinedError) {
-    AssertUndefined(value, error);
-    return value;
-}
+import UndefinedParameter from "./undefined-parameter";
+import UndefinedParameters from "./undefined-parameters";
+export var Undefined;
+(function (Undefined) {
+    Undefined.Parameter = UndefinedParameter;
+    Undefined.Parameters = UndefinedParameters;
+})(Undefined || (Undefined = {}));
+export default Undefined;
 //# sourceMappingURL=undefined.js.map

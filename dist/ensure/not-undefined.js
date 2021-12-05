@@ -1,7 +1,9 @@
-import AssertNotUndefined from "../assert/not-undefined";
-import NotUndefinedError from "../assert/throwable/not-undefined";
-export default function NotUndefined(value, error = NotUndefinedError) {
-    AssertNotUndefined(value, error);
-    return value;
-}
+import NotUndefinedParameter from "./not-undefined-parameter";
+import NotUndefinedParameters from "./not-undefined-parameters";
+export var NotUndefined;
+(function (NotUndefined) {
+    NotUndefined.Parameter = NotUndefinedParameter;
+    NotUndefined.Parameters = NotUndefinedParameters;
+})(NotUndefined || (NotUndefined = {}));
+export default NotUndefined;
 //# sourceMappingURL=not-undefined.js.map
