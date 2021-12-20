@@ -30,12 +30,5 @@ export default function NotUndefinedParameters(
 
     strings.push('not undefined');
 
-    if(!valid) {
-
-        ReplaceParameters(strings, 2, v=>v + ',')
-
-        strings.push('actual', conversion(value));
-    }
-
     return strings.join(' ') + '.';
 }
