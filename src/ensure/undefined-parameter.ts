@@ -1,5 +1,5 @@
-import Value from "@alirya/value/value";
-import UndefinedParameters from "./undefined-parameters";
+import Value from '@alirya/value/value';
+import UndefinedParameters from './undefined-parameters';
 
 export default function UndefinedParameter(
     {

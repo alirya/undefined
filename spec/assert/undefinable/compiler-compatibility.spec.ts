@@ -1,7 +1,7 @@
-import Undefinable from "../../../dist/assert/undefinable-parameters";
-import Boolean from "@alirya/boolean/assert/boolean";
+import Undefinable from '../../../dist/assert/undefinable-parameters';
+import Boolean from '@alirya/boolean/assert/boolean';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe('union', () => {
 
@@ -10,7 +10,7 @@ describe('union', () => {
 
     try {
 
-        Undefinable(target, Boolean)
+        Undefinable(target, Boolean);
 
         let undefinable : boolean|undefined = target;
         // @ts-expecerror

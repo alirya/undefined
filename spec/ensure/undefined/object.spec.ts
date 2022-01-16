@@ -1,6 +1,6 @@
-import Undefined from "../../../dist/ensure/undefined-parameters";
+import Undefined from '../../../dist/ensure/undefined-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`plain`, () => {
     try {

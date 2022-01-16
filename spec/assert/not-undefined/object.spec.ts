@@ -1,6 +1,6 @@
-import NotUndefined from "../../../dist/assert/not-undefined";
+import NotUndefined from '../../../dist/assert/not-undefined';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`plain`, () => {
     expect(NotUndefined({})).toBeUndefined();

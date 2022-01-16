@@ -1,13 +1,13 @@
-import Undefinable from "../../../dist/assert/undefinable-parameters";
-import Boolean from "@alirya/boolean/assert/boolean";
+import Undefinable from '../../../dist/assert/undefinable-parameters';
+import Boolean from '@alirya/boolean/assert/boolean';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 it(`integer`, () => {
 
     try {
-        Undefinable(1, Boolean)
+        Undefinable(1, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -16,7 +16,7 @@ it(`integer`, () => {
 
 it(`float`, () => {
     try {
-        Undefinable(1.1, Boolean)
+        Undefinable(1.1, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -26,7 +26,7 @@ it(`float`, () => {
 it(`infinity`, () => {
 
     try {
-        Undefinable(Infinity, Boolean)
+        Undefinable(Infinity, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -36,7 +36,7 @@ it(`infinity`, () => {
 it(`Nan`, () => {
 
     try {
-        Undefinable(NaN, Boolean)
+        Undefinable(NaN, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

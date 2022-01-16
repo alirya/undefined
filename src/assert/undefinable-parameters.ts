@@ -1,4 +1,4 @@
-import Guard from "../boolean/undefined";
+import Guard from '../boolean/undefined';
 
 export default function UndefinableParameters<Alternative>(
     value : unknown,
@@ -10,14 +10,14 @@ export default function UndefinableParameters<Alternative>(
 
         if(!Guard(value)) {
 
-            assert(value)
+            assert(value);
         }
 
     } catch (e) {
 
         if(error) {
 
-            throw error(value)
+            throw error(value);
         }
 
         throw e;

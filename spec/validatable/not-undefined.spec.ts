@@ -1,7 +1,7 @@
-import Validatable from "../../dist/validatable/not-undefined-parameters";
-import StringMessage from "../../dist/assert/string/undefined-parameters";
+import Validatable from '../../dist/validatable/not-undefined-parameters';
+import StringMessage from '../../dist/assert/string/undefined-parameters';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough()});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
 describe(`compiler compatible`,function() {
@@ -19,7 +19,7 @@ describe(`compiler compatible`,function() {
         } else {
 
             let string : undefined = validatable.value;
-            fail('validatable.valid should false')
+            fail('validatable.valid should false');
         }
     });
 
@@ -31,7 +31,7 @@ describe(`compiler compatible`,function() {
 
             // @ts-expecerror
             let string : undefined = validatable.value;
-            fail('validatable.valid should false')
+            fail('validatable.valid should false');
 
         } else {
 
@@ -74,7 +74,7 @@ it(`valid`,function() {
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toBe(undefined);
-    expect(typeof validatable.message).toBe("string");
+    expect(typeof validatable.message).toBe('string');
 
 });
 
@@ -84,7 +84,7 @@ it(`invalid`,function() {
 
     expect(validatable.valid).toBe(true);
     expect(validatable.value).toBe(11);
-    expect(typeof validatable.message).toBe("string");
+    expect(typeof validatable.message).toBe('string');
 
 });
 

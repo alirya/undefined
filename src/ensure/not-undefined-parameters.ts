@@ -1,6 +1,6 @@
-import AssertNotUndefined from "../assert/not-undefined";
-import NotUndefinedError from "../assert/throwable/not-undefined-parameters";
-import {Union} from "ts-toolbelt"
+import AssertNotUndefined from '../assert/not-undefined';
+import NotUndefinedError from '../assert/throwable/not-undefined-parameters';
+import {Union} from 'ts-toolbelt';
 
 export default function NotUndefinedParameters<Type>(
     value : Type,

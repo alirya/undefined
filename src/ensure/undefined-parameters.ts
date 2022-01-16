@@ -1,5 +1,5 @@
-import AssertUndefined from "../assert/undefined";
-import UndefinedError from "../assert/throwable/undefined-parameters";
+import AssertUndefined from '../assert/undefined';
+import UndefinedError from '../assert/throwable/undefined-parameters';
 
 export default function UndefinedParameters(
     value : unknown,

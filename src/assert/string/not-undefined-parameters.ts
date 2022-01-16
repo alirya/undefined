@@ -1,4 +1,4 @@
-import ReplaceParameters from "@alirya/array/replace-parameters";
+import ReplaceParameters from '@alirya/array/replace-parameters';
 
 /**
  * string intended for not undefined message

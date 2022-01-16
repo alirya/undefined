@@ -1,4 +1,4 @@
-import ReplaceParameters from "@alirya/array/replace-parameters";
+import ReplaceParameters from '@alirya/array/replace-parameters';
 
 /**
  * string intended for undefined message
@@ -32,7 +32,7 @@ export default function UndefinedParameters(
 
     if(!valid) {
 
-        ReplaceParameters(strings, 2, v=>v + ',')
+        ReplaceParameters(strings, 2, v=>v + ',');
 
         strings.push('actual', conversion(value));
     }

@@ -1,5 +1,5 @@
-import Callback from "@alirya/function/callback/callback";
-import UndefinableParameters from "./undefinable-parameters";
+import Callback from '@alirya/function/callback/callback';
+import UndefinableParameters from './undefinable-parameters';
 
 export default function UndefinableParameter<Alternative>(
     value,

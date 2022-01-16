@@ -1,5 +1,5 @@
-import Undefinable from "../../../dist/assert/undefinable-parameters";
-import Boolean from "@alirya/boolean/assert/boolean";
+import Undefinable from '../../../dist/assert/undefinable-parameters';
+import Boolean from '@alirya/boolean/assert/boolean';
 
 it(`undefined `, () => {
 

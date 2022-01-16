@@ -1,6 +1,6 @@
-import Value from "@alirya/value/value";
-import Callback from "@alirya/function/callback/callback";
-import UndefinableParameters from "./undefinable-parameters";
+import Value from '@alirya/value/value';
+import Callback from '@alirya/function/callback/callback';
+import UndefinableParameters from './undefinable-parameters';
 
 export default function UndefinableParameter<Alternative>(
     {
@@ -12,5 +12,5 @@ export default function UndefinableParameter<Alternative>(
     }
 ) : Alternative|undefined {
 
-    return UndefinableParameters(value, callback, error)
+    return UndefinableParameters(value, callback, error);
 }

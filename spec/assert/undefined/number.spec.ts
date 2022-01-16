@@ -1,11 +1,11 @@
-import Undefined from "../../../dist/assert/undefined";
+import Undefined from '../../../dist/assert/undefined';
 
-it("enable console log", () => { spyOn(console, 'log').and.callThrough();});
+it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`integer`, () => {
 
     try {
-        Undefined(1)
+        Undefined(1);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -14,7 +14,7 @@ it(`integer`, () => {
 
 it(`float`, () => {
     try {
-        Undefined(1.1)
+        Undefined(1.1);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -24,7 +24,7 @@ it(`float`, () => {
 it(`infinity`, () => {
 
     try {
-        Undefined(Infinity)
+        Undefined(Infinity);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -34,7 +34,7 @@ it(`infinity`, () => {
 it(`Nan`, () => {
 
     try {
-        Undefined(NaN)
+        Undefined(NaN);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

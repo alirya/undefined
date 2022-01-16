@@ -1,5 +1,5 @@
-import UndefinedType from "../string/undefined-parameters";
-import New from "@alirya/function/new";
+import UndefinedType from '../string/undefined-parameters';
+import New from '@alirya/function/new';
 
 export default function UndefinedParameters(
     value : unknown,
@@ -7,5 +7,5 @@ export default function UndefinedParameters(
     subject : string = ''
 ) : Error {
 
-    return error(UndefinedType(value, false, subject))
+    return error(UndefinedType(value, false, subject));
 }

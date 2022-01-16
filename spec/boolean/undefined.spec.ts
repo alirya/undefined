@@ -1,6 +1,6 @@
-import Undefined from "../../dist/boolean/undefined";
+import Undefined from '../../dist/boolean/undefined';
 
-it("force console log", () => { spyOn(console, 'log').and.callThrough();});
+it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
 describe(`compiler compatible`,function() {
 
@@ -37,7 +37,7 @@ describe(`number`,function() {
     });
 });
 
-describe("boolean", function() {
+describe('boolean', function() {
 
     it(`true`, () => {
         expect(Undefined(true)).toBeFalse();
@@ -49,7 +49,7 @@ describe("boolean", function() {
 
 });
 
-describe("string", function() {
+describe('string', function() {
 
     it(`primitive`, () => {
         expect(Undefined('str')).toBeFalse();
@@ -61,7 +61,7 @@ describe("string", function() {
 
 });
 
-describe("object", function() {
+describe('object', function() {
 
     it(`plain`, () => {
         expect(Undefined({})).toBeFalse();
@@ -73,7 +73,7 @@ describe("object", function() {
 
 });
 
-describe("function", function() {
+describe('function', function() {
 
     it(`anonymous `, () => {
         expect(Undefined(function () {})).toBeFalse();
@@ -89,7 +89,7 @@ describe("function", function() {
 
 });
 
-describe("empty", function() {
+describe('empty', function() {
 
     it(`null `, () => {
         expect(Undefined(null)).toBeFalse();

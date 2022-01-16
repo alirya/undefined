@@ -1,4 +1,4 @@
-import AssertUndefinableParameters from "../assert/undefinable-parameters";
+import AssertUndefinableParameters from '../assert/undefinable-parameters';
 
 export default function UndefinableParameters<Alternative>(
     value : unknown,

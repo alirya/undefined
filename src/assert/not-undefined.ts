@@ -1,7 +1,7 @@
-import Guard from "../boolean/not-undefined";
-import Callback from "@alirya/function/assert/callback-parameters";
-import NotUndefinedError from "./throwable/not-undefined-parameters";
-import {Union} from "ts-toolbelt"
+import Guard from '../boolean/not-undefined';
+import Callback from '@alirya/function/assert/callback-parameters';
+import NotUndefinedError from './throwable/not-undefined-parameters';
+import {Union} from 'ts-toolbelt';
 
 export default function NotUndefined<Type>(
     value : Type,

@@ -1,6 +1,6 @@
-import {Union} from "ts-toolbelt"
-import Value from "@alirya/value/value";
-import NotUndefinedParameters from "./not-undefined-parameters";
+import {Union} from 'ts-toolbelt';
+import Value from '@alirya/value/value';
+import NotUndefinedParameters from './not-undefined-parameters';
 
 export default function NotUndefinedParameter<Type>(
     {

@@ -1,5 +1,5 @@
-import NotUndefinedType from "../string/not-undefined-parameters";
-import New from "@alirya/function/new";
+import NotUndefinedType from '../string/not-undefined-parameters';
+import New from '@alirya/function/new';
 
 export default function NotUndefinedParameters(
     value : unknown,
@@ -7,5 +7,5 @@ export default function NotUndefinedParameters(
     subject : string = ''
 ) : Error {
 
-    return error(NotUndefinedType(value, false, subject))
+    return error(NotUndefinedType(value, false, subject));
 }
