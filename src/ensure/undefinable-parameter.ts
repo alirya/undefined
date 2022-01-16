@@ -1,5 +1,5 @@
-import Value from "@dikac/t-value/value";
-import Callback from "@dikac/t-function/callback/callback";
+import Value from "@alirya/value/value";
+import Callback from "@alirya/function/callback/callback";
 import UndefinableParameters from "./undefinable-parameters";
 
 export default function UndefinableParameter<Alternative>(

@@ -1,5 +1,5 @@
 import Undefinable from "../../../dist/ensure/undefinable-parameters";
-import Boolean from "@dikac/t-boolean/ensure/boolean-parameters";
+import Boolean from "@alirya/boolean/ensure/boolean-parameters";
 
 it(`plain`, () => {
     try {

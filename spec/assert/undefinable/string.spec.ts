@@ -1,5 +1,5 @@
 import Undefinable from "../../../dist/assert/undefinable-parameters";
-import Boolean from "@dikac/t-boolean/assert/boolean";
+import Boolean from "@alirya/boolean/assert/boolean";
 
 it(`primitive`, () => {
     try {

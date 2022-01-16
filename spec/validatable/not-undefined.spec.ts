@@ -29,7 +29,7 @@ describe(`compiler compatible`,function() {
 
         if(validatable.valid) {
 
-            // @ts-expect-error
+            // @ts-expecerror
             let string : undefined = validatable.value;
             fail('validatable.valid should false')
 
@@ -46,18 +46,18 @@ describe(`compiler compatible`,function() {
         let validatable = Validatable(<unknown>1, StringMessage);
 
         try {
-            // @ts-expect-error
+            // @ts-expecerror
             validatable.valid = true;
             fail('exception should thrown');
         } catch (e) {
             expect(e).toBeInstanceOf(Error);
         }
 
-        // @ts-expect-error
+        // @ts-expecerror
         validatable.value = true;
 
         try {
-            // @ts-expect-error
+            // @ts-expecerror
             validatable.message = 'message';
             fail('exception should thrown');
         } catch (e) {

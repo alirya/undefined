@@ -12,7 +12,7 @@ describe('union', () => {
 
         Undefined(target);
 
-        // @ts-expect-error
+        // @ts-expecerror
         let number : number = target;
         let undefined : undefined = target;
 

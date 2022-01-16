@@ -1,8 +1,8 @@
-import ValidatorAbstract from "@dikac/t-validator/validator";
+import ValidatorAbstract from "@alirya/validator/validator";
 import NotUndefinedValidatable from "../validatable/not-undefined-parameters";
-import Instance from "@dikac/t-validator/validatable/validatable";
+import Instance from "@alirya/validator/validatable/validatable";
 import NotUndefinedMessage from "../assert/string/not-undefined-parameter";
-import Static from "@dikac/t-validator/message/function/static-parameter";
+import Static from "@alirya/validator/message/function/static-parameter";
 
 export default function NotUndefinedParameter() : ValidatorAbstract<unknown, undefined, true, false, Readonly<Instance<undefined, string>>>;
 

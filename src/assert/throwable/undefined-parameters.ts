@@ -1,5 +1,5 @@
 import UndefinedType from "../string/undefined-parameters";
-import New from "@dikac/t-function/new";
+import New from "@alirya/function/new";
 
 export default function UndefinedParameters(
     value : unknown,

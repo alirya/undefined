@@ -1,11 +1,11 @@
-import Callback from "@dikac/t-validator/validatable/callback-function-parameters";
+import Callback from "@alirya/validator/validatable/callback-function-parameters";
 import UndefinedGuard from "../boolean/undefined";
-import Value from "@dikac/t-value/value";
-import Return from "@dikac/t-validator/validatable/simple";
-import Instance from "@dikac/t-validator/validatable/validatable";
+import Value from "@alirya/value/value";
+import Return from "@alirya/validator/validatable/simple";
+import Instance from "@alirya/validator/validatable/validatable";
 import UndefinedMessage from "../assert/string/undefined-parameter";
-import Message from "@dikac/t-message/message";
-import ValidatableMessage from "@dikac/t-validator/message/function/validatable-parameter";
+import Message from "@alirya/message/message";
+import ValidatableMessage from "@alirya/validator/message/function/validatable-parameter";
 
 export default function UndefinedParameter<Argument>(
     {

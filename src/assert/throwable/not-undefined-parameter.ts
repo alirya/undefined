@@ -1,4 +1,4 @@
-import Value from "@dikac/t-value/value";
+import Value from "@alirya/value/value";
 import NotUndefinedParameters from "./not-undefined-parameters";
 
 export default function NotUndefinedParameter(

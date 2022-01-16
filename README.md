@@ -1,2 +1,2 @@
-# t-undefined
+# undefined
 typescript undefined

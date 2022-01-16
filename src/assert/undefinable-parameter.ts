@@ -1,4 +1,4 @@
-import Callback from "@dikac/t-function/callback/callback";
+import Callback from "@alirya/function/callback/callback";
 import UndefinableParameters from "./undefinable-parameters";
 
 export default function UndefinableParameter<Alternative>(

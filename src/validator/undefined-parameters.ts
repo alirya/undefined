@@ -1,9 +1,9 @@
-import Validator from "@dikac/t-validator/simple";
+import Validator from "@alirya/validator/simple";
 import UndefinedValidatable from "../validatable/undefined-parameters";
-import Instance from "@dikac/t-validator/validatable/validatable";
+import Instance from "@alirya/validator/validatable/validatable";
 import UndefinedMessage from "../assert/string/undefined-parameters";
-import Simplest from "@dikac/t-validator/message/function/simple-parameters";
-import Simple from "@dikac/t-validator/message/function/simple-parameters";
+import Simplest from "@alirya/validator/message/function/simple-parameters";
+import Simple from "@alirya/validator/message/function/simple-parameters";
 
 export default function UndefinedParameters() : Validator<unknown, undefined, Readonly<Instance<unknown, string>>>
 
