@@ -8,7 +8,7 @@ describe(`compiler compatible`,function() {
 
     if(NotUndefined(a)) {
 
-        // @ts-expecerror
+        // @ts-expect-error
         let n : undefined = a;
         let s : string = a;
 

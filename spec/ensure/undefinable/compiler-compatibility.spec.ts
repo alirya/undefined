@@ -12,9 +12,9 @@ describe('union', () => {
         Undefinable(target, Boolean);
 
         let undefinable : boolean|undefined = target;
-        // @ts-expecerror
+        // @ts-expect-error
         let undefined : undefined = target;
-        // @ts-expecerror
+        // @ts-expect-error
         let boolean : boolean = target;
 
     } catch (e) {
