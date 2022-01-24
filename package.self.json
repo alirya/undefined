@@ -12,6 +12,9 @@
     "@alirya/value": "^0.15.0-beta.2",
     "ts-toolbelt": "^9.6.0"
   },
+  "devDependencies": {
+    "@alirya/boolean": "^0.11.0-beta.6"
+  },
   "homepage": "https://github.com/alirya/undefined",
   "repository": {
     "type": "git",
