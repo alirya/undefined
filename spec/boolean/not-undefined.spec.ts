@@ -2,7 +2,7 @@ import NotUndefined from '../../dist/boolean/not-undefined';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe(`compiler compatible`,function() {
+it(`compiler compatible`,function() {
 
     let a : undefined|string = '1';
 

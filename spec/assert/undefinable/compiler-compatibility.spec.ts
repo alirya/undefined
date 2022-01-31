@@ -3,7 +3,7 @@ import Boolean from '@alirya/boolean/assert/boolean';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe('union', () => {
+it('union', () => {
 
 
     let target : undefined|boolean = <any>true;

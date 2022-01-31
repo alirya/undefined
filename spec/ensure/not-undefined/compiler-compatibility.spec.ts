@@ -2,7 +2,7 @@ import NotUndefined from '../../../dist/ensure/not-undefined-parameters';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe('union', () => {
+it('union', () => {
 
     let target : undefined|number = <any>1;
 
@@ -14,7 +14,7 @@ describe('union', () => {
     let undefined : undefined = result;
 });
 
-describe('unknown', () => {
+it('unknown', () => {
 
     let target : any = 1;
 

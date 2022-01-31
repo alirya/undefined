@@ -2,7 +2,7 @@ import Undefined from '../../../dist/ensure/undefined-parameters';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-describe('union', () => {
+it('union', () => {
 
     let target : undefined|number = undefined;
 
@@ -19,7 +19,7 @@ describe('union', () => {
     }
 });
 
-describe('unknown', () => {
+it('unknown', () => {
 
     let target : unknown = undefined;
 

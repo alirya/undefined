@@ -3,7 +3,7 @@ import Undefined from '../../../dist/assert/undefined';
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 
-describe('union', () => {
+it('union', () => {
 
 
     let target : undefined|number = undefined;
@@ -21,7 +21,7 @@ describe('union', () => {
     }
 });
 
-describe('unknown', () => {
+it('unknown', () => {
 
     let target : unknown = undefined;
 
