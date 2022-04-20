@@ -1,16 +1,28 @@
 {
   "name": "@alirya/undefined",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Typescript undefined",
+  "publishConfig": {
+    "directory": "dist"
+  },
+  "author": {
+    "name": "Andika Candra"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/alirya/undefined",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alirya/undefined"
+  },
   "dependencies": {
     "tslib": "^2.3.1",
-    "@alirya/array": "^0.26.1",
-    "@alirya/function": "^0.16.0",
-    "@alirya/message": "^0.12.1",
-    "@alirya/string": "^0.16.4",
-    "@alirya/validatable": "^0.20.1",
-    "@alirya/validator": "^0.19.3",
-    "@alirya/value": "^0.15.1",
+    "@alirya/array": "^0.26.3",
+    "@alirya/function": "^0.16.2",
+    "@alirya/message": "^0.12.2",
+    "@alirya/string": "^0.16.8",
+    "@alirya/validatable": "^0.20.2",
+    "@alirya/validator": "^0.19.4",
+    "@alirya/value": "^0.15.2",
     "ts-toolbelt": "^9.6.0"
   },
   "devDependencies": {
@@ -31,8 +43,9 @@
     "ts-toolbelt": "^9.6.0",
     "utility-types": "^3.10.0",
     "package-version-git-tag": "^3.0.0",
-    "@alirya/boolean": "^0.11.1"
+    "@alirya/boolean": "^0.11.2"
   },
+  "private": true,
   "scripts": {
     "spec-run-js": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json",
     "spec-run": "node -r esm node_modules/jasmine/bin/jasmine.js --config=./jasmine.json --reporter=jasmine-ts-console-reporter",
@@ -65,18 +78,5 @@
     "_release-remove-compile-cache": "rimraf ./dist/compiler-cache.json",
     "_doc-generate": "typedoc --entryPointStrategy expand ./src --out docs",
     "_doc-clean": "rimraf docs"
-  },
-  "publishConfig": {
-    "directory": "dist"
-  },
-  "author": {
-    "name": "Andika Candra"
-  },
-  "private": true,
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/alirya/undefined",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alirya/undefined"
   }
 }
