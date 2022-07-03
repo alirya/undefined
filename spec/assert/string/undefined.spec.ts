@@ -1,4 +1,4 @@
-import Undefined_ from '../../../dist/assert/string/undefined-parameters';
+import {UndefinedParameters} from '../../../dist/assert/string/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -6,7 +6,7 @@ let data = new Map<[boolean, any, string?], string>();
 
 it('true', ()=>{
 
-    expect(Undefined_({}, true,  'value')).toBe(
+    expect(UndefinedParameters({}, true,  'value')).toBe(
         'value is undefined.'
     );
 
@@ -14,7 +14,7 @@ it('true', ()=>{
 
 it('false', ()=>{
 
-    expect(Undefined_({}, false,  'value')).toBe(
+    expect(UndefinedParameters({}, false,  'value')).toBe(
         'value must undefined, actual object.'
     );
 

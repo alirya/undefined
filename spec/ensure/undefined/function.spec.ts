@@ -1,10 +1,10 @@
-import Undefined from '../../../dist/ensure/undefined-parameters';
+import {UndefinedParameters} from '../../../dist/ensure/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`anonymous `, () => {
     try {
-        Undefined(function () {});
+        UndefinedParameters(function () {});
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -13,7 +13,7 @@ it(`anonymous `, () => {
 
 it(`anonymous arrow`, () => {
     try {
-        Undefined(()=>{});
+        UndefinedParameters(()=>{});
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -22,7 +22,7 @@ it(`anonymous arrow`, () => {
 
 it(`named`, () => {
     try {
-        Undefined(isNaN);
+        UndefinedParameters(isNaN);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

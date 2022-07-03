@@ -1,4 +1,4 @@
-import Undefinable from '../../../dist/assert/undefinable-parameters';
+import {UndefinableParameters} from '../../../dist/assert/undefinable';
 import Boolean from '@alirya/boolean/assert/boolean';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
@@ -10,7 +10,7 @@ it('union', () => {
 
     try {
 
-        Undefinable(target, Boolean);
+        UndefinableParameters(target, Boolean);
 
         let undefinable : boolean|undefined = target;
         // @ts-expect-error

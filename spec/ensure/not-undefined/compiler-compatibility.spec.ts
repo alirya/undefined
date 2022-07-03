@@ -1,4 +1,4 @@
-import NotUndefined from '../../../dist/ensure/not-undefined-parameters';
+import {NotUndefinedParameters} from '../../../dist/ensure/not-undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -6,7 +6,7 @@ it('union', () => {
 
     let target : undefined|number = <any>1;
 
-    let result = NotUndefined(target);
+    let result = NotUndefinedParameters(target);
 
     let number : number = result;
 
@@ -18,7 +18,7 @@ it('unknown', () => {
 
     let target : any = 1;
 
-    NotUndefined(target);
+    NotUndefinedParameters(target);
 
     let undefined : undefined = target;
 

@@ -1,10 +1,10 @@
-import Undefined from '../../../dist/ensure/undefined-parameters';
+import {UndefinedParameters} from '../../../dist/ensure/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`primitive`, () => {
     try {
-        Undefined('str');
+        UndefinedParameters('str');
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -13,7 +13,7 @@ it(`primitive`, () => {
 
 it(`object`, () => {
     try {
-        Undefined(new String('str'));
+        UndefinedParameters(new String('str'));
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

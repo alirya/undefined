@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/ensure/undefinable-parameters';
-import Boolean from '@alirya/boolean/ensure/boolean-parameters';
+import {UndefinableParameters} from '../../../dist/ensure/undefinable';
+import {BooleanParameters} from '@alirya/boolean/ensure/boolean';
 
 it(`undefined `, () => {
 
     let value = undefined;
-    expect(Undefinable(value, Boolean)).toBeUndefined();
+    expect(UndefinableParameters(value, BooleanParameters)).toBeUndefined();
     expect(value).toBeUndefined();
 });

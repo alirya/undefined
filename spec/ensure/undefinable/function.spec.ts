@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/ensure/undefinable-parameters';
-import Boolean from '@alirya/boolean/ensure/boolean-parameters';
+import {UndefinableParameters} from '../../../dist/ensure/undefinable';
+import {BooleanParameters} from '@alirya/boolean/ensure/boolean';
 
 it(`anonymous `, () => {
     try {
-        Undefinable(function () {}, Boolean);
+        UndefinableParameters(function () {}, BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -12,7 +12,7 @@ it(`anonymous `, () => {
 
 it(`anonymous arrow`, () => {
     try {
-        Undefinable(()=>{}, Boolean);
+        UndefinableParameters(()=>{}, BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -21,7 +21,7 @@ it(`anonymous arrow`, () => {
 
 it(`named`, () => {
     try {
-        Undefinable(isNaN, Boolean);
+        UndefinableParameters(isNaN, BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

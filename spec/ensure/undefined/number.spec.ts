@@ -1,11 +1,11 @@
-import Undefined from '../../../dist/ensure/undefined-parameters';
+import {UndefinedParameters} from '../../../dist/ensure/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`integer`, () => {
 
     try {
-        Undefined(1);
+        UndefinedParameters(1);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -14,7 +14,7 @@ it(`integer`, () => {
 
 it(`float`, () => {
     try {
-        Undefined(1.1);
+        UndefinedParameters(1.1);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -24,7 +24,7 @@ it(`float`, () => {
 it(`infinity`, () => {
 
     try {
-        Undefined(Infinity);
+        UndefinedParameters(Infinity);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -34,7 +34,7 @@ it(`infinity`, () => {
 it(`Nan`, () => {
 
     try {
-        Undefined(NaN);
+        UndefinedParameters(NaN);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

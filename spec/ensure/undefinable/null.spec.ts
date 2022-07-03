@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/ensure/undefinable-parameters';
-import Boolean from '@alirya/boolean/ensure/boolean-parameters';
+import {UndefinableParameters} from '../../../dist/ensure/undefinable';
+import {BooleanParameters} from '@alirya/boolean/ensure/boolean';
 
 it(`null`, () => {
     try {
-        Undefinable(null, Boolean);
+        UndefinableParameters(null, BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

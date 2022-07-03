@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/assert/undefinable-parameters';
+import {UndefinableParameters} from '../../../dist/assert/undefinable';
 import Boolean from '@alirya/boolean/assert/boolean';
 
 it(`anonymous `, () => {
     try {
-        Undefinable(function () {}, Boolean);
+        UndefinableParameters(function () {}, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -12,7 +12,7 @@ it(`anonymous `, () => {
 
 it(`anonymous arrow`, () => {
     try {
-        Undefinable(()=>{}, Boolean);
+        UndefinableParameters(()=>{}, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -21,7 +21,7 @@ it(`anonymous arrow`, () => {
 
 it(`named`, () => {
     try {
-        Undefinable(isNaN, Boolean);
+        UndefinableParameters(isNaN, Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

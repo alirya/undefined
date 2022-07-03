@@ -1,5 +1,5 @@
-import Undefined from '../../dist/validator/undefined-parameters';
-import StringMessage from '../../dist/assert/string/undefined-parameters';
+import {UndefinedParameters} from '../../dist/validator/undefined';
+import StringMessage from '../../dist/assert/string/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -7,7 +7,7 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validator = Undefined(StringMessage);
+        let validator = UndefinedParameters(StringMessage.Parameters);
         let validatable = validator(<unknown>undefined);
 
         if(validatable.valid) {
@@ -26,7 +26,7 @@ describe(`compiler compatible`,function() {
 
     it(`invalid value`,function() {
 
-        let validator = Undefined(StringMessage);
+        let validator = UndefinedParameters(StringMessage.Parameters);
         let validatable = validator({});
 
         if(validatable.valid) {
@@ -46,7 +46,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validator = Undefined(StringMessage);
+        let validator = UndefinedParameters(StringMessage.Parameters);
         let validatable = validator('1');
 
         try {
@@ -79,7 +79,7 @@ describe(`compiler compatible`,function() {
 
 it(`valid`,function() {
 
-    let validator = Undefined(StringMessage);
+    let validator = UndefinedParameters(StringMessage.Parameters);
     let validatable = validator(undefined);
 
     expect(validatable.valid).toBe(true);
@@ -90,7 +90,7 @@ it(`valid`,function() {
 
 it(`invalid`,function() {
 
-    let validator = Undefined(StringMessage);
+    let validator = UndefinedParameters(StringMessage.Parameters);
     let validatable = validator(1);
 
     expect(validatable.valid).toBe(false);

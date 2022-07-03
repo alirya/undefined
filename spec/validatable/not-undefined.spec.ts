@@ -1,5 +1,5 @@
-import Validatable from '../../dist/validatable/not-undefined-parameters';
-import StringMessage from '../../dist/assert/string/undefined-parameters';
+import {NotUndefinedParameters} from '../../dist/validatable/not-undefined';
+import StringMessage from '../../dist/assert/string/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -8,7 +8,7 @@ describe(`compiler compatible`,function() {
 
     it(`valid value`,function() {
 
-        let validatable = Validatable(<unknown>{}, StringMessage);
+        let validatable = NotUndefinedParameters(<unknown>{}, StringMessage.Parameters);
 
         if(validatable.valid) {
 
@@ -25,7 +25,7 @@ describe(`compiler compatible`,function() {
 
     it(`invalid value`,function() {
 
-        let validatable = Validatable(<unknown>undefined, StringMessage);
+        let validatable = NotUndefinedParameters(<unknown>undefined, StringMessage.Parameters);
 
         if(validatable.valid) {
 
@@ -43,7 +43,7 @@ describe(`compiler compatible`,function() {
 
     it(`readonly`,function() {
 
-        let validatable = Validatable(<unknown>1, StringMessage);
+        let validatable = NotUndefinedParameters(<unknown>1, StringMessage.Parameters);
 
         try {
             // @ts-expect-error
@@ -70,7 +70,7 @@ describe(`compiler compatible`,function() {
 
 it(`valid`,function() {
 
-    let validatable = Validatable(undefined, StringMessage);
+    let validatable = NotUndefinedParameters(undefined, StringMessage.Parameters);
 
     expect(validatable.valid).toBe(false);
     expect(validatable.value).toBe(undefined);
@@ -80,7 +80,7 @@ it(`valid`,function() {
 
 it(`invalid`,function() {
 
-    let validatable = Validatable(11, StringMessage);
+    let validatable = NotUndefinedParameters(11, StringMessage.Parameters);
 
     expect(validatable.valid).toBe(true);
     expect(validatable.value).toBe(11);

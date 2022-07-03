@@ -1,4 +1,4 @@
-import Undefined from '../../../dist/ensure/undefined-parameters';
+import {UndefinedParameters} from '../../../dist/ensure/undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -8,7 +8,7 @@ it('union', () => {
 
     try {
 
-        let result = Undefined(target);
+        let result = UndefinedParameters(target);
 
         // @ts-expect-error
         let number : number = result;
@@ -25,7 +25,7 @@ it('unknown', () => {
 
     try {
 
-        let result = Undefined(target);
+        let result = UndefinedParameters(target);
 
         let undefined : undefined = result;
 

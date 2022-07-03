@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/ensure/undefinable-parameters';
-import Boolean from '@alirya/boolean/ensure/boolean-parameters';
+import {UndefinableParameters} from '../../../dist/ensure/undefinable';
+import {BooleanParameters} from '@alirya/boolean/ensure/boolean';
 
 it(`plain`, () => {
     try {
-        Undefinable({}, Boolean);
+        UndefinableParameters({}, BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -12,7 +12,7 @@ it(`plain`, () => {
 
 it(`instance`, () => {
     try {
-        Undefinable(new Map(), Boolean);
+        UndefinableParameters(new Map(), BooleanParameters);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

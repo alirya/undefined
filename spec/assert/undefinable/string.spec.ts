@@ -1,9 +1,9 @@
-import Undefinable from '../../../dist/assert/undefinable-parameters';
+import {UndefinableParameters} from '../../../dist/assert/undefinable';
 import Boolean from '@alirya/boolean/assert/boolean';
 
 it(`primitive`, () => {
     try {
-        Undefinable('str', Boolean);
+        UndefinableParameters('str', Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);
@@ -12,7 +12,7 @@ it(`primitive`, () => {
 
 it(`object`, () => {
     try {
-        Undefinable(new String('str'), Boolean);
+        UndefinableParameters(new String('str'), Boolean);
         fail('exception should thrown');
     } catch (e) {
         expect(e).toBeInstanceOf(Error);

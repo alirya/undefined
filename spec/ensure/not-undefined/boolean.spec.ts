@@ -1,14 +1,14 @@
-import NotUndefined from '../../../dist/ensure/not-undefined-parameters';
+import {NotUndefinedParameters} from '../../../dist/ensure/not-undefined';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`true`, () => {
 
-     NotUndefined(true);
+     NotUndefinedParameters(true);
 });
 
 it(`false`, () => {
 
-     NotUndefined(false);
+     NotUndefinedParameters(false);
 });
 
