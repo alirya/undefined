@@ -1,9 +1,9 @@
-import ValidatableStatic from '@alirya/validator/validatable/static';
-import NotUndefinedBoolean from '../boolean/not-undefined';
-import NotUndefinedMessage from '../assert/string/not-undefined';
-import ValidatableType from '@alirya/validator/validatable/validatable';
-import {CallbackParameters} from '@alirya/validator/validatable/callback';
-import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static';
+import ValidatableStatic from '@alirya/validator/validatable/static.js';
+import NotUndefinedBoolean from '../boolean/not-undefined.js';
+import NotUndefinedMessage from '../assert/string/not-undefined.js';
+import ValidatableType from '@alirya/validator/validatable/validatable.js';
+import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static.js';
 
 export type NotUndefinedReturn<Argument, MessageType> = Readonly<ValidatableStatic<Argument, undefined, true, false, ValidatableType<Argument | undefined, MessageType>>>;
 

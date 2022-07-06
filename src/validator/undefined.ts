@@ -1,8 +1,8 @@
-import Validator from '@alirya/validator/simple';
-import UndefinedValidatable from '../validatable/undefined';
-import Instance from '@alirya/validator/validatable/validatable';
-import UndefinedMessage from '../assert/string/undefined';
-import {SimpleParameter, SimpleParameters} from '@alirya/validator/message/function/simple';
+import Validator from '@alirya/validator/simple.js';
+import UndefinedValidatable from '../validatable/undefined.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import UndefinedMessage from '../assert/string/undefined.js';
+import {SimpleParameter, SimpleParameters} from '@alirya/validator/message/function/simple.js';
 
 export function UndefinedParameters() : Validator<unknown, undefined, Readonly<Instance<unknown, string>>>;
 

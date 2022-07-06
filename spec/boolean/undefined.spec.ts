@@ -1,4 +1,4 @@
-import Undefined from '../../dist/boolean/undefined';
+import Undefined from '../../dist/boolean/undefined.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 

@@ -1,8 +1,8 @@
-import ValidatorAbstract from '@alirya/validator/validator';
-import NotUndefinedValidatable from '../validatable/not-undefined';
-import Instance from '@alirya/validator/validatable/validatable';
-import NotUndefinedMessage from '../assert/string/not-undefined';
-import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static';
+import ValidatorAbstract from '@alirya/validator/validator.js';
+import NotUndefinedValidatable from '../validatable/not-undefined.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import NotUndefinedMessage from '../assert/string/not-undefined.js';
+import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static.js';
 
 export function NotUndefinedParameters() : ValidatorAbstract<unknown, undefined, true, false, Readonly<Instance<undefined, string>>>;
 

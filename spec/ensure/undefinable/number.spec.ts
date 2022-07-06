@@ -1,5 +1,5 @@
-import {UndefinableParameters} from '../../../dist/ensure/undefinable';
-import {BooleanParameters} from '@alirya/boolean/ensure/boolean';
+import {UndefinableParameters} from '../../../dist/ensure/undefinable.js';
+import {BooleanParameters} from '@alirya/boolean/ensure/boolean.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

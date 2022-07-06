@@ -1,4 +1,4 @@
-import {NotUndefinedParameters} from '../../../dist/assert/string/not-undefined';
+import {NotUndefinedParameters} from '../../../dist/assert/string/not-undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

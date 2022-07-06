@@ -1,5 +1,5 @@
-import {NotUndefinedParameters} from '../../dist/validator/not-undefined';
-import StringMessage from '../../dist/assert/string/not-undefined';
+import {NotUndefinedParameters} from '../../dist/validator/not-undefined.js';
+import StringMessage from '../../dist/assert/string/not-undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

@@ -1,5 +1,5 @@
-import {UndefinedParameters} from '../../dist/validatable/undefined';
-import StringMessage from '../../dist/assert/string/undefined';
+import {UndefinedParameters} from '../../dist/validatable/undefined.js';
+import StringMessage from '../../dist/assert/string/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

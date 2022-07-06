@@ -1,4 +1,4 @@
-import NotUndefined from '../../dist/boolean/not-undefined';
+import NotUndefined from '../../dist/boolean/not-undefined.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
