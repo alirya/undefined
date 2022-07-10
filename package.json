@@ -1,6 +1,6 @@
 {
   "name": "@alirya/undefined",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "Typescript undefined",
   "publishConfig": {
     "directory": "dist"
