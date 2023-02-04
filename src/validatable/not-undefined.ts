@@ -5,7 +5,7 @@ import ValidatableType from '@alirya/validator/validatable/validatable';
 import {CallbackParameters} from '@alirya/validator/validatable/callback';
 import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static';
 
-export type NotUndefinedReturn<Argument, MessageType> = Readonly<ValidatableStatic<Argument, undefined, true, false, ValidatableType<Argument | undefined, MessageType>>>;
+export type NotUndefinedReturn<Argument, MessageType> = Readonly<ValidatableStatic<Argument, undefined, true, false, MessageType>>;
 
 export function NotUndefinedParameters<Argument>(
     value : Argument
