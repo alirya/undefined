@@ -1,20 +1,20 @@
-import NotUndefined from '../../dist/boolean/not-undefined';
+import NotUndefined from '../../dist/boolean/not-undefined.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let a : undefined|string = '1';
+    const a : undefined|string = '1';
 
     if(NotUndefined(a)) {
 
         // @ts-expect-error
-        let n : undefined = a;
-        let s : string = a;
+        const n : undefined = a;
+        const s : string = a;
 
     } else {
 
-        let n : undefined = a;
+        const n : undefined = a;
     }
 
 });

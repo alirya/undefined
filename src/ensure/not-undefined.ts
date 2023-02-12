@@ -1,7 +1,7 @@
-import AssertNotUndefined from '../assert/not-undefined';
-import NotUndefinedError from '../assert/throwable/not-undefined';
+import AssertNotUndefined from '../assert/not-undefined.js';
+import NotUndefinedError from '../assert/throwable/not-undefined.js';
 import {Union} from 'ts-toolbelt';
-import Value from '@alirya/value/value';
+import Value from '@alirya/value/value.js';
 
 export function NotUndefinedParameters<Type>(
     value : Type,

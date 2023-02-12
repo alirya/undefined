@@ -1,5 +1,5 @@
-import Guard from '../boolean/undefined';
-import Callback from '@alirya/function/callback/callback';
+import Guard from '../boolean/undefined.js';
+import Callback from '@alirya/function/callback/callback.js';
 
 export function UndefinableParameters<Alternative>(
     value : unknown,

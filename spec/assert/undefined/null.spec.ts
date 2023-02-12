@@ -1,4 +1,4 @@
-import Undefined from '../../../dist/assert/undefined';
+import Undefined from '../../../dist/assert/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

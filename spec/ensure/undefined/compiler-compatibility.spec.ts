@@ -1,18 +1,18 @@
-import {UndefinedParameters} from '../../../dist/ensure/undefined';
+import {UndefinedParameters} from '../../../dist/ensure/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it('union', () => {
 
-    let target : undefined|number = undefined;
+    const target : undefined|number = undefined;
 
     try {
 
-        let result = UndefinedParameters(target);
+        const result = UndefinedParameters(target);
 
         // @ts-expect-error
-        let number : number = result;
-        let undefined : undefined = result;
+        const number : number = result;
+        const undefined : undefined = result;
 
     } catch (e) {
 
@@ -21,13 +21,13 @@ it('union', () => {
 
 it('unknown', () => {
 
-    let target : unknown = undefined;
+    const target : unknown = undefined;
 
     try {
 
-        let result = UndefinedParameters(target);
+        const result = UndefinedParameters(target);
 
-        let undefined : undefined = result;
+        const undefined : undefined = result;
 
     } catch (e) {
 

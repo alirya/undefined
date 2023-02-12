@@ -1,19 +1,19 @@
-import Undefinable from '../../dist/boolean/undefinable';
+import Undefinable from '../../dist/boolean/undefinable.js';
 
 it('force console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`compiler compatible`,function() {
 
-    let a : unknown = '1';
+    const a : unknown = '1';
 
     if(Undefinable(a, Array.isArray)) {
 
-        let n : undefined|any[] = a;
+        const n : undefined|any[] = a;
 
     } else {
 
         // @ts-expect-error
-        let n : undefined|any[] = a;
+        const n : undefined|any[] = a;
     }
 
 });

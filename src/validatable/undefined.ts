@@ -1,12 +1,12 @@
-import UndefinedGuard from '../boolean/undefined';
-import Return from '@alirya/validator/validatable/simple';
-import Instance from '@alirya/validator/validatable/validatable';
-import Dynamic from '@alirya/validator/message/function/simple';
-import UndefinedMessage from '../assert/string/undefined';
-import {CallbackParameters} from '@alirya/validator/validatable/callback';
-import Value from '@alirya/value/value';
-import Message from '@alirya/message/message';
-import ValidatableMessage from '@alirya/validator/message/function/validatable';
+import UndefinedGuard from '../boolean/undefined.js';
+import Return from '@alirya/validator/validatable/simple.js';
+import Instance from '@alirya/validator/validatable/validatable.js';
+import Dynamic from '@alirya/validator/message/function/simple.js';
+import UndefinedMessage from '../assert/string/undefined.js';
+import {CallbackParameters} from '@alirya/validator/validatable/callback.js';
+import Value from '@alirya/value/value.js';
+import Message from '@alirya/message/message.js';
+import ValidatableMessage from '@alirya/validator/message/function/validatable.js';
 
 export function UndefinedParameters<Argument>(
     value : Argument

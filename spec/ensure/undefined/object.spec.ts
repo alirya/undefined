@@ -1,4 +1,4 @@
-import {UndefinedParameters} from '../../../dist/ensure/undefined';
+import {UndefinedParameters} from '../../../dist/ensure/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 

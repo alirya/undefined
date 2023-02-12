@@ -1,11 +1,11 @@
-import NotUndefinedType from '../string/not-undefined';
-import New from '@alirya/function/new';
-import Value from '@alirya/value/value';
+import NotUndefinedType from '../string/not-undefined.js';
+import New from '@alirya/function/new.js';
+import Value from '@alirya/value/value.js';
 
 export function NotUndefinedParameters(
     value : unknown,
     error : (string : string)=>Error = New(Error),
-    subject : string = ''
+    subject  = ''
 ) : Error {
 
     return error(NotUndefinedType.Parameters(value, false, subject));

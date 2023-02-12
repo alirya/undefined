@@ -1,10 +1,10 @@
-import {NotUndefinedParameters} from '../../../dist/ensure/not-undefined';
+import {NotUndefinedParameters} from '../../../dist/ensure/not-undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
 it(`null`, () => {
 
-    let value = null;
+    const value = null;
     expect(NotUndefinedParameters(value)).toBe(value);
 });
 

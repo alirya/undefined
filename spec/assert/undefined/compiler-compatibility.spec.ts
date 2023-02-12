@@ -1,4 +1,4 @@
-import Undefined from '../../../dist/assert/undefined';
+import Undefined from '../../../dist/assert/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
@@ -6,15 +6,15 @@ it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 it('union', () => {
 
 
-    let target : undefined|number = undefined;
+    const target : undefined|number = undefined;
 
     try {
 
         Undefined(target);
 
         // @ts-expect-error
-        let number : number = target;
-        let undefined : undefined = target;
+        const number : number = target;
+        const undefined : undefined = target;
 
     } catch (e) {
 
@@ -23,13 +23,13 @@ it('union', () => {
 
 it('unknown', () => {
 
-    let target : unknown = undefined;
+    const target : unknown = undefined;
 
     try {
 
         Undefined(target);
 
-        let undefined : undefined = target;
+        const undefined : undefined = target;
 
     } catch (e) {
 

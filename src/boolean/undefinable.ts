@@ -1,4 +1,4 @@
-import TypeUndefined from './undefined';
+import TypeUndefined from './undefined.js';
 /**
  * check if value is undefined or delegate checking to given validator
  */

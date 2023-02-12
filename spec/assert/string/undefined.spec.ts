@@ -1,8 +1,8 @@
-import {UndefinedParameters} from '../../../dist/assert/string/undefined';
+import {UndefinedParameters} from '../../../dist/assert/string/undefined.js';
 
 it('enable console log', () => { spyOn(console, 'log').and.callThrough();});
 
-let data = new Map<[boolean, any, string?], string>();
+const data = new Map<[boolean, any, string?], string>();
 
 it('true', ()=>{
 

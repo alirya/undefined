@@ -1,9 +1,9 @@
-import {UndefinableParameters} from '../../../dist/assert/undefinable';
-import Boolean from '@alirya/boolean/assert/boolean';
+import {UndefinableParameters} from '../../../dist/assert/undefinable.js';
+import Boolean from '@alirya/boolean/assert/boolean.js';
 
 it(`undefined `, () => {
 
-    let value = undefined;
+    const value = undefined;
     expect(UndefinableParameters(value, Boolean)).toBeUndefined();
     expect(value).toBeUndefined();
 });

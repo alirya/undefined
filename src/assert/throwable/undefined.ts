@@ -1,11 +1,11 @@
-import UndefinedType from '../string/undefined';
-import New from '@alirya/function/new';
-import Value from '@alirya/value/value';
+import UndefinedType from '../string/undefined.js';
+import New from '@alirya/function/new.js';
+import Value from '@alirya/value/value.js';
 
 export function UndefinedParameters(
     value : unknown,
     error : (string : string)=>Error = New(Error),
-    subject : string = ''
+    subject  = ''
 ) : Error {
 
     return error(UndefinedType.Parameters(value, false, subject));

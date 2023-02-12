@@ -1,6 +1,6 @@
-import {UndefinableParameters as AssertUndefinableParameters} from '../assert/undefinable';
-import Value from '@alirya/value/value';
-import Callback from '@alirya/function/callback/callback';
+import {UndefinableParameters as AssertUndefinableParameters} from '../assert/undefinable.js';
+import Value from '@alirya/value/value.js';
+import Callback from '@alirya/function/callback/callback.js';
 
 export function UndefinableParameters<Alternative>(
     value : unknown,
