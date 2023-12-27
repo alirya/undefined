@@ -1,8 +1,8 @@
-import ValidatorAbstract from '@alirya/validator/validator.js';
+import ValidatorAbstract from '@axiona/validator/validator.js';
 import NotUndefinedValidatable from '../validatable/not-undefined.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
 import NotUndefinedMessage from '../assert/string/not-undefined.js';
-import {StaticParameters, StaticParameter} from '@alirya/validator/message/function/static.js';
+import {StaticParameters, StaticParameter} from '@axiona/validator/message/function/static.js';
 
 export function NotUndefinedParameters() : ValidatorAbstract<unknown, undefined, true, false, string>;
 

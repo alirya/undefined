@@ -1,6 +1,6 @@
 import AssertUndefined from '../assert/undefined.js';
 import UndefinedError from '../assert/throwable/undefined.js';
-import Value from '@alirya/value/value.js';
+import Value from '@axiona/value/value.js';
 
 export function UndefinedParameters(
     value : unknown,

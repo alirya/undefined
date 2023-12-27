@@ -1,8 +1,8 @@
-import Validator from '@alirya/validator/simple.js';
+import Validator from '@axiona/validator/simple.js';
 import UndefinedValidatable from '../validatable/undefined.js';
-import Instance from '@alirya/validator/validatable/validatable.js';
+import Instance from '@axiona/validator/validatable/validatable.js';
 import UndefinedMessage from '../assert/string/undefined.js';
-import {SimpleParameter, SimpleParameters} from '@alirya/validator/message/function/simple.js';
+import {SimpleParameter, SimpleParameters} from '@axiona/validator/message/function/simple.js';
 
 export function UndefinedParameters() : Validator<unknown, undefined, string>;
 

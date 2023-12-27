@@ -1,5 +1,5 @@
 import {UndefinableParameters} from '../../../dist/ensure/undefinable.js';
-import {BooleanParameters} from '@alirya/boolean/ensure/boolean.js';
+import {BooleanParameters} from '@axiona/boolean/ensure/boolean.js';
 
 it(`plain`, () => {
     try {
